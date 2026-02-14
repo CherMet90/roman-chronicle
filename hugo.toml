@@ -1,0 +1,24 @@
+baseurl = "https://chermet90.github.io/roman-chronicle"
+languageCode = "ru"
+title = "The Roman Chronicle"
+theme = "charaka-hugo-theme"
+copyright = "© The Roman Chronicle"
+
+relativeURLs = true
+preserveTaxonomyNames = true
+
+[services.googleAnalytics]
+googleAnalytics = ""
+
+[author]
+  name = "CherMet90"
+  homepage = "https://github.com/CherMet90"
+
+[params.highlight]
+  style = "zenburn"
+
+[params.share]
+  enabled = "true"
+
+[markup.goldmark.renderer]
+unsafe = true

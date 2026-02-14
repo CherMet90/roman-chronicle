@@ -1,0 +1,15 @@
+# Editor / IDE
+.reygpt-mask.yml
+.vscode/
+.idea/
+*.swp
+
+# Hugo build output
+/public/
+resources/
+themes/charaka-hugo-theme/
+.hugo_build.lock
+
+# OS junk
+.DS_Store
+Thumbs.db

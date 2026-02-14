@@ -1,0 +1,25 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="container">
+  <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">{{ .Title }}</h1>
+
+  {{/* Наш блок с "Рим, год 154 от основания Града, Царский период." */}}
+  <p class="subtitle is-6">
+    {{ with .Params.location }}{{ . }}, {{ end }}
+    {{ with .Params.roman_year_auc }}год {{ . }} от основания Града, {{ end }}
+    {{ with .Params.era }}{{ . }}.{{ end }}
+  </p>
+
+  {{ with .Params.lede }}
+    <p class="subtitle is-6"><em>{{ . }}</em></p>
+    <hr class="mt-5">
+  {{ end }}
+
+  <div class="content post-body pt-5">
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "jsshare" . }}
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
