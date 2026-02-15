@@ -138,3 +138,4 @@ hugo server         # только опубликованные
 - [Hugo документация](https://gohugo.io/documentation/)
 - [Charaka Hugo Theme](https://github.com/natarajmb/charaka-hugo-theme)
 - [GitHub Pages](https://pages.github.com/)
+- [Историческая дорожная карта](ROADMAP.md) — генеральный план всех эпох и арок.
