@@ -1,7 +1,7 @@
 ---
 title: "Вестник Тибра — выпуск №1"
 date: 2026-02-08T21:58:04+03:00
-draft: true
+draft: false
 
 slug: "001-tarquins-forum"
 
