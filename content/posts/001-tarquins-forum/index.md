@@ -7,7 +7,7 @@ slug: "001-tarquins-forum"
 
 issue: 1
 era: "Царский период"
-roman_year_auc: 245
+roman_year_auc: 244
 season: "Весна"
 
 location: "Рим"
