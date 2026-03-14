@@ -22,13 +22,20 @@ lede: "[1-2 предложения: краткая выжимка главных
 
 <!-- 
 ИНСТРУКЦИЯ ПО ИЛЛЮСТРАЦИЯМ:
-Перед каждым блоком <img> обязательно формировать блок технического задания для генерации.
-Шаблон:
-`[ТЕХНИКА]`: Antique copperplate engraving style, fine line-work...
-`[ЭПОХА]`: [Указать эпоху из сценария]
-`[СЦЕНА]`: [Действие/объект]
-`[ДЕТАЛИ]`: [Фон, быт, одежда]
-`[ЗАПРЕТЫ]`: --no marble, --no roman (чтобы избежать имперских клише), --no weapons (для быта)
+Используем строгий формат для nano-banana-pro. Обязательно соблюдаем историческую эпоху. Следуем правилам историчности соответствующего сценария
+
+ШАБЛОН:
+[STYLE]: Fine line antique copperplate engraving, warm sepia tones, light parchment background.
+[PERIOD]: [Берем из сценария].
+[SUBJECT]: [ОПИСАНИЕ СЦЕНЫ].
+[DETAILS]: [Необходимые для конкретной иллюстрации].
+[NEGATIVE]: --no letters, --no text, --no labels, --no caption, --no signature, --no color, [дополняем в соответствии со сценарием].
+[SIZE]: --ar [ЗНАЧЕНИЕ].
+
+РЕКОМЕНДАЦИИ ПО [SIZE]:
+- Главная новость (шапка номера): --ar 3:2 (или 16:9 для панорам)
+- Новости рынка / Культура: --ar 4:3 (для верстки рядом с текстом)
+- ЧП: --ar 1:1 или 4:5 (портретный формат для акцента на объекте)
 -->
 
 ## 🔥 Темы недели
@@ -40,10 +47,8 @@ lede: "[1-2 предложения: краткая выжимка главных
 - Объём: 3–4 заметки на выпуск.
 -->
 
-`[ПРОМПТ ДЛЯ ИЛЛЮСТРАЦИИ (ПО ЖЕЛАНИЮ)]`
-
 <div style="width: 100%; margin: 2rem 0; text-align: center;">
-  <img src="[путь-к-изображению.jpg]" alt="[Описание]" style="width: 100%; height: auto; display: block; border: 1px solid #dcdcdc;">
+  <img src="[ПУТЬ-К-ИЗОБРАЖЕНИЮ]" alt="[ОПИСАНИЕ]" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; display: block;">
 </div>
 
 ### [Заголовок главной новости]
@@ -62,9 +67,9 @@ lede: "[1-2 предложения: краткая выжимка главных
 - Структура: 2 заметки работают на сюжет + 1–2 заметки описывают чистый быт (гончары, дрова, соль, ремонт).
 -->
 
-<p style="float: left; margin: 1rem 2rem 0 0;">
-  <img src="[путь-к-изображению.jpg]" alt="[Описание]" style="max-width: 300px; height: auto;">
-</p>
+<div style="float: left; width: 45%; margin: 0.5rem 1.5rem 1rem 0; clear: left;">
+  <img src="[ПУТЬ-К-ИЗОБРАЖЕНИЮ]" alt="[ОПИСАНИЕ]" style="width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; display: block;">
+</div>
 
 ### [Заголовок новости (влияние сюжета)]
 Текст новости...
@@ -83,9 +88,9 @@ lede: "[1-2 предложения: краткая выжимка главных
 - Объём: 3–4 заметки.
 -->
 
-<p style="float: right; margin: 1rem 0 0 2rem;">
-  <img src="[путь-к-изображению.jpg]" alt="[Описание]" style="max-width: 250px; height: auto;">
-</p>
+<div style="float: right; width: 40%; margin: 0.5rem 0 1rem 1.5rem; clear: right;">
+  <img src="[ПУТЬ-К-ИЗОБРАЖЕНИЮ]" alt="[ОПИСАНИЕ]" style="width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; display: block;">
+</div>
 
 ### [Заголовок новости из жизни горожан]
 Текст новости...
