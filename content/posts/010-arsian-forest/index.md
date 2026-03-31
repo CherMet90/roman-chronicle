@@ -22,8 +22,6 @@ lede: "Войско изгнанников у границ. После Арси�
 
 ## 🔥 Темы недели
 
-<!-- Главная новость - битва и гибель Брута -->
-
 <div style="width: 100%; margin: 2rem 0; text-align: center;">
   <img src="production_images_a677bfae-5f26-47d9-baa8-a0b2eacedc6b.png" alt="Битва при Арсийском лесу - два воина в поединке на фоне хаоса сражения" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; display: block;">
 </div>
